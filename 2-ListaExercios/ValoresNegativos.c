@@ -7,7 +7,7 @@
 */
 
 #include <stdio.h>
-int main() {
+void main() {
     int tamanho = 10;
     int i, vet[tamanho];
 
@@ -24,6 +24,4 @@ int main() {
     for (i = 0; i < tamanho; i++) {
         printf("%d ", vet[i]);
     }
-
-    return 0;
 }

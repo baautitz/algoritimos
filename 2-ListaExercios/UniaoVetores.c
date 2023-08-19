@@ -7,7 +7,7 @@
 */
 
 #include <stdio.h>
-int main() {
+void main() {
     int tamanho = 5;
     int i, j, duplicado, qtdeAdicionado = 0, vet1[tamanho], vet2[tamanho], vetUniao[tamanho * 2];
 
@@ -81,6 +81,4 @@ int main() {
     for (i = 0; i < tamanho * 2; i++) {
         if (vetUniao[i] != -1) printf("%d ", vetUniao[i]);
     }
-
-    return 0;
 }

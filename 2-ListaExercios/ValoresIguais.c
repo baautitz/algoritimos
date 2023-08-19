@@ -6,7 +6,7 @@
 */
 
 #include <stdio.h>
-int main() {
+void main() {
     int tamanho = 10;
     int vet[tamanho], duplicados[tamanho / 2], i, j, k, duplicadoConhecido,
         qtdeDuplicados = 0;
@@ -51,6 +51,4 @@ int main() {
             if (duplicados[i] != -1) printf("%d ", duplicados[i]);
         }
     }
-
-    return 0;
 }

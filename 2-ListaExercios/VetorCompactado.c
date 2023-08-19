@@ -6,7 +6,7 @@
 
 */
 #include <stdio.h>
-int main() {
+void main() {
     int tamanho = 15;
     int i, j, alt, vet[tamanho];
 
@@ -29,6 +29,4 @@ int main() {
     for (i = 0; i < tamanho; i++) {
         printf("%d ", vet[i]);
     }
-
-    return 0;
 }
