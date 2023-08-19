@@ -11,15 +11,17 @@ void main() {
     int vet[tamanho], duplicados[tamanho / 2], i, j, k, duplicadoConhecido,
         qtdeDuplicados = 0;
 
-    for (i = 0; i < tamanho; i++) {
-        printf("Digite o valor %d de %d (deve ser inteiro e maior que 0): ",
-               (i + 1), tamanho);
-        scanf("%d", &vet[i]);
-        fflush(stdin);
-    }
-
     for (i = 0; i < (tamanho / 2); i++) {
         duplicados[i] = -1;
+    }
+
+    for (i = 0; i < tamanho; i++) {
+        printf("Digite o valor %d de %d (deve ser um numero natural): ",
+               (i + 1), tamanho);
+        scanf("%d", &vet[i]);
+
+        if (!(vet[i] > 0)) i -=1;
+        fflush(stdin);
     }
 
     for (i = 0; i < (tamanho - 1); i++) {
