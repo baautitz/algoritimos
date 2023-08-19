@@ -1,13 +1,13 @@
 /*
 
     2. Faca um programa que leia um vetor de 10 posições e verifique se existem
-   valores iguais e os escreva na tela.
+    valores iguais e os escreva na tela.
 
 */
 
 #include <stdio.h>
 void main() {
-    int tamanho = 10;
+    int tamanho = 5;
     int vet[tamanho], duplicados[tamanho / 2], i, j, k, duplicadoConhecido,
         qtdeDuplicados = 0;
 
@@ -34,15 +34,10 @@ void main() {
                 }
             }
 
-            if (duplicadoConhecido != 0) continue;
+            if (duplicadoConhecido == 1) continue;
 
-            for (k = 0; k < (tamanho / 2); k++) {
-                if (duplicados[k] != -1) continue;
-
-                duplicados[k] = vet[i];
-                qtdeDuplicados++;
-                break;
-            }
+            duplicados[qtdeDuplicados] = vet[i]; // adiciona valor duplicado ao vetor de duplicados, caso não ainda seja conhecido
+            qtdeDuplicados++;
         }
     }
 
