@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 void main() {
-    int tamanho = 5;
+    int tamanho = 10;
     int vet[tamanho], duplicados[tamanho / 2], i, j, k, duplicadoConhecido,
         qtdeDuplicados = 0;
 

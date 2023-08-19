@@ -1,7 +1,7 @@
 /*
 
     1. Faça um programa que leia 10 números inteiros, armazene-os em um vetor,
-   solicite um valor de referência inteiro e:
+    solicite um valor de referência inteiro e:
 
     a) imprima os números do vetor que são maiores que o valor referência
     b) retorne quantos números armazenados no vetor são menores que o valor de
@@ -11,7 +11,7 @@
 */
 #include <stdio.h>
 void main() {
-    int tamanho = 5;
+    int tamanho = 10;
     int i, referencia, vet[tamanho], auxiliar = 0;
     char questao;
 
