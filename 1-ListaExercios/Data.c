@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main() {
+int main() {
     int dia, mes;
 
     printf("Digite um dia: ");
@@ -76,4 +76,6 @@ void main() {
         default:
             printf("Mês inválido.");
     }
+
+    return 0;
 }

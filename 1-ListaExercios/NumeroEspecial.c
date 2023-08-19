@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main() {
+int main() {
     int numero, soma, alt, i;
 
     for (i = 1000; i <= 9999; i++) {
@@ -14,4 +14,6 @@ void main() {
         if ((soma * soma) == i)
             printf("%d é um número especial!\n", i);
     }
+
+    return 0;
 }

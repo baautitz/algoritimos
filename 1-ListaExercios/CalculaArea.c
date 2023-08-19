@@ -1,5 +1,5 @@
 #include <stdio.h>
-void main() {
+int main() {
     int numLados, lado1, lado2;
     float area;
 
@@ -30,4 +30,6 @@ void main() {
     }
 
     printf("A área de um polígono de %d lados calculado: %.2f", numLados, area);
+
+    return 0;
 }

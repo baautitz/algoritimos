@@ -10,7 +10,7 @@
 
 */
 #include <stdio.h>
-void main() {
+int main() {
     int tamanho = 10;
     int i, referencia, vet[tamanho], auxiliar = 0;
     char questao;
@@ -82,4 +82,6 @@ void main() {
             printf("Opção desconhecida.");
             break;
     }
+
+    return 0;
 }
