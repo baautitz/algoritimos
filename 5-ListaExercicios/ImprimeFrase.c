@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <string.h>
 void main() {
-    int i, j, qtdePalavras, posUltimaPalavra;
+    int adicionandoPalavra, qtdePalavras, posUltimaPalavra;
     char frase[50], palavras[50][50];
 
     printf("Digite uma frase: ");
@@ -22,19 +22,23 @@ void main() {
     strcat(frase, " ");
 
     qtdePalavras = posUltimaPalavra = 0;
-    for (i = 0; i < strlen(frase); i++) {
-        if ((frase[i] == ' ') && (frase[i - 1] != ' ')) {
-            for (j = 0; j < (i - posUltimaPalavra); j++) {
-                palavras[qtdePalavras][j] = frase[j + posUltimaPalavra];
-            }
 
-            palavras[qtdePalavras][j] = '\0';
+    adicionandoPalavra = 0;
+    for (int i = 0; i < strlen(frase); i++) {
+        if (frase[i] != ' ') {
+            adicionandoPalavra = 1;
+            palavras[qtdePalavras][i - posUltimaPalavra] = frase[i];
+            continue;
+        } else if (adicionandoPalavra == 1) {
+            palavras[qtdePalavras][i - posUltimaPalavra] = '\0';
             qtdePalavras++;
-            posUltimaPalavra = i + 1;
+            adicionandoPalavra = 0;
         }
+
+        posUltimaPalavra = i + 1;
     }
 
-    for (i = 0; i < qtdePalavras; i++) {
+    for (int i = 0; i < qtdePalavras; i++) {
         printf("\n%s - %d", palavras[i], strlen(palavras[i]));
     }
 }
