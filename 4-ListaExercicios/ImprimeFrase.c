@@ -15,27 +15,26 @@
 #include <string.h>
 void main() {
     int adicionandoPalavra, qtdePalavras, posUltimaPalavra;
-    char frase[50], palavras[50][50];
+    char frase[50], palavras[25][50];
 
     printf("Digite uma frase: ");
     gets(frase);
     strcat(frase, " ");
 
     qtdePalavras = posUltimaPalavra = 0;
-
     adicionandoPalavra = 0;
     for (int i = 0; i < strlen(frase); i++) {
         if (frase[i] != ' ') {
             adicionandoPalavra = 1;
             palavras[qtdePalavras][i - posUltimaPalavra] = frase[i];
-            continue;
-        } else if (adicionandoPalavra == 1) {
-            palavras[qtdePalavras][i - posUltimaPalavra] = '\0';
-            qtdePalavras++;
-            adicionandoPalavra = 0;
+        } else {
+            if (adicionandoPalavra == 1) {
+                palavras[qtdePalavras][i - posUltimaPalavra] = '\0';
+                qtdePalavras++;
+                adicionandoPalavra = 0;
+            }
+            posUltimaPalavra = i + 1;
         }
-
-        posUltimaPalavra = i + 1;
     }
 
     for (int i = 0; i < qtdePalavras; i++) {
