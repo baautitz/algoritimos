@@ -1,2 +1,3 @@
 output/
 /.vscode/tasks.json
+**/*.exe
