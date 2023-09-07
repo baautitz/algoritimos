@@ -21,7 +21,7 @@ void main() {
                (i + 1), tamanho);
         scanf("%d", &vet1[i]);
 
-        if (!(vet1[i] > 0)) i -=1;
+        if (!(vet1[i] > 0)) i -= 1;
         fflush(stdin);
     }
 
@@ -31,7 +31,7 @@ void main() {
                (i + 1), tamanho);
         scanf("%d", &vet2[i]);
 
-        if (!(vet2[i] > 0)) i -=1;
+        if (!(vet2[i] > 0)) i -= 1;
         fflush(stdin);
     }
 

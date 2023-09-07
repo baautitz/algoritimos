@@ -20,7 +20,7 @@ void main() {
                (i + 1), tamanho);
         scanf("%d", &vet[i]);
 
-        if (!(vet[i] > 0)) i -=1;
+        if (!(vet[i] > 0)) i -= 1;
         fflush(stdin);
     }
 
@@ -38,7 +38,7 @@ void main() {
 
             if (duplicadoConhecido == 1) continue;
 
-            duplicados[qtdeDuplicados] = vet[i]; // adiciona valor duplicado ao vetor de duplicados, caso não ainda seja conhecido
+            duplicados[qtdeDuplicados] = vet[i];  // adiciona valor duplicado ao vetor de duplicados, caso não ainda seja conhecido
             qtdeDuplicados++;
         }
     }

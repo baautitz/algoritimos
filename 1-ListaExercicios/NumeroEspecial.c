@@ -5,7 +5,7 @@ void main() {
     for (i = 1000; i <= 9999; i++) {
         alt = i;
         soma = 0;
-        
+
         while (alt > 0) {
             soma += alt % 100;
             alt = alt / 100;
