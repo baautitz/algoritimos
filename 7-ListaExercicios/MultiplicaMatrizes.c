@@ -1,3 +1,10 @@
+/**
+ * 2) Multiplicação de Matrizes: Crie um programa que realiza a multiplicação de duas matrizes (4,5) x (5,6) e exibe o
+ * resultado. A multiplicação de duas matrizes é um procedimento que envolve calcular os produtos escalares entre os
+ * elementos das linhas de uma matriz pelo elementos das colunas da outra matriz. Para realizar a multiplicação de duas
+ * matrizes A e B, onde A tem dimensão (m x n) e B tem dimensão (n x p), o resultado C terá dimensão (m x p).
+ */
+
 #include <stdio.h>
 
 void printaMatriz(int lin, int col, int mat[lin][col]) {
@@ -10,7 +17,7 @@ void printaMatriz(int lin, int col, int mat[lin][col]) {
 }
 
 void main() {
-    int i, j, k, l, mat1[4][5], mat2[5][6], matRes[4][6];
+    int i, j, k, mat1[4][5], mat2[5][6], matRes[4][6];
 
     printf("Matriz 1: \n");
     for (i = 0; i < 4; i++) {

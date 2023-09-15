@@ -1,3 +1,8 @@
+/**
+ * 1) Soma de Matrizes:
+ * Escreva um programa que recebe duas matrizes 4x4 e calcula a soma delas.
+ */
+
 #include <stdio.h>
 
 int counter = 1;
